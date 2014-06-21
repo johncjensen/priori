@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'better_errors', group: :development
 gem 'binding_of_caller', group: :development
 gem 'coffee-rails', '~> 4.0.0'
+gem 'httparty'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'launchy', group: :test
