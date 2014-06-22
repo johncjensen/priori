@@ -1,5 +1,6 @@
 class Organization
-
+  include HTTParty
+  
   base_uri "http://api.crunchbase.com/v/2/organization"
   default_params output: :json
   format :json
@@ -22,6 +23,6 @@ class Organization
     else
       raise response.response
     end
-    
+
   end
 end

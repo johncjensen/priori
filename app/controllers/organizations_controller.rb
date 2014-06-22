@@ -10,7 +10,7 @@ class OrganizationsController < ApplicationController
     else
       logger.debug "No params!"
     end
-    @organizations = Organization.all
+    # @organizations = Organization.all
   end
 
   # GET /organizations/1

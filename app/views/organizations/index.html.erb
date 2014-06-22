@@ -8,14 +8,11 @@
   </thead>
 
   <tbody>
-    <% @organizations.each do |organization| %>
+  
+    <% unless nil @organizations.each do |organization| %>
       <tr>
         <td><%= link_to 'Show', organization %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Organization', new_organization_path %>
