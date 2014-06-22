@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CrunchbaseTest < ActiveSupport::TestCase
+class ProductTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
