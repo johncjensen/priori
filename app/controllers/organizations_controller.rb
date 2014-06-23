@@ -1,24 +1,15 @@
 class OrganizationsController < ApplicationController
   before_action :set_organization, only: :show
 
-  # GET /organizations
-  # GET /organizations.json
   def index
-    if search_params 
-      logger.debug "Got params: #{search_params}"
-      @organization = Organization.find(search_params)
-    else
-      logger.debug "No params!"
-    end
-    # @organizations = Organization.all
+    @organizations = Organization.everything["data"]["items"]
   end
 
-  # GET /organizations/1
-  # GET /organizations/1.json
   def show
+    @org = Organization.find(search_params)["data"]
   end
 
-  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_organization

@@ -8,11 +8,9 @@
   </thead>
 
   <tbody>
-  
-    <% unless nil @organizations.each do |organization| %>
-      <tr>
-        <td><%= link_to 'Show', organization %></td>
-      </tr>
+    <% @organizations.each do |organization| %>
+        <%= link_to organization["name"], "#{organization['path']}"  %>
+      <hr>
     <% end %>
   </tbody>
 </table>
